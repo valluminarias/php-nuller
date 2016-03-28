@@ -10,7 +10,15 @@ Class Nuller {
      * @return null|string
      */
     public static function nullified($string, $as_string = false, $display_string = '') {
-        return $as_string ? ($display_string ?: 'Null') : null;
+        return $as_string ? self::nullifiedToString($string, $display_string) : null;
+    }
+
+    public static function nullifiedToString($string, $display_string = '') {
+        return $display_string ?: 'Null';
+    }
+
+    public static function nullifiedIfEmpty($string, $display_string = '') {
+        return $string ?: self::nullifiedToString($string, $display_string);
     }
 
 }
