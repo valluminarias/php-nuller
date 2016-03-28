@@ -1,0 +1,16 @@
+{
+    "name": "valluminarias/php-nuller",
+    "description": "A simple PHP Helper Class to nullify string and output desired string as placeholder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Val Luminarias",
+            "email": "vluminarias@yahoo.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nuller\\": "src"
+        }
+    }
+}
