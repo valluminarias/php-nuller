@@ -10,7 +10,7 @@ Class Nuller {
      * @return null|string
      */
     public static function nullified($string, $as_string = false, $display_string = '') {
-        return $as_string ? (empty($display_string) ?: 'Null') : null;
+        return $as_string ? ($display_string ?: 'Null') : null;
     }
 
 }
