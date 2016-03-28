@@ -8,6 +8,12 @@
             "email": "vluminarias@yahoo.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/valluminarias/php-nuller"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Nuller\\": "src"
